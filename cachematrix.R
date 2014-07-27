@@ -1,17 +1,17 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## Sorry, I don't have the time to make the real homework, I'll try it the next week, so I propose two functions :
+## The first is a test to verify is the matrix can be solved
+## The second can only solve a matrix
 
 makeCacheMatrix <- function(x = matrix())
 {
         nb_col <- ncol(x)
         nb_row <- nrow(x)
-        if(nb_col == nb_row)
+        if(nb_col == nb_row) ## This is a test to verify if the matrix is a square matrix
         {
                 det_x <- det(x)
                 
-                if (det_x != 0)
+                if (det_x != 0) ## This is the second test to see if the determinant of the matrix is'nt not null
                 {
                         det_x
                 }else{
@@ -28,5 +28,5 @@ makeCacheMatrix <- function(x = matrix())
 
 cacheSolve <- function(x, ...) 
 {
-        ## Return a matrix that is the inverse of 'x'
+        solve(x) ## Return a matrix that is the inverse of 'x'
 }
